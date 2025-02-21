@@ -13,7 +13,7 @@ const TaskList = () => {
                {tasks.filter((el) => el.isDone).length}/{tasks.length}
             </div>
          </div>
-         <div className="h-[620px] overflow-scroll hsb">
+         <div className="h-[620px] md:h-[910px] xl:h-[520px] overflow-scroll hsb">
             {tasks.map((el) => (
                <Task key={el.id} job={el} />
             ))}
