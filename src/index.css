@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hsb {
+   -ms-overflow-style: none;
+   scrollbar-width: none;
+}
+.hsb::-webkit-scrollbar {
+   display: none;
+}
