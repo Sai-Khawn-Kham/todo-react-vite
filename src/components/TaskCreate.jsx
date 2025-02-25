@@ -10,13 +10,15 @@ const TaskCreate = () => {
    };
 
    const handleAddTaskBtn = () => {
-      const newTask = {
-         id: Date.now(),
-         task: job,
-         isDone: false,
-      };
-      addTask(newTask);
-      setJob("");
+      if(job!==""){
+         const newTask = {
+            id: Date.now(),
+            task: job,
+            isDone: false,
+         };
+         addTask(newTask);
+         setJob("");
+      }
    };
 
    return (
@@ -29,7 +31,7 @@ const TaskCreate = () => {
          />
          <button
             onClick={handleAddTaskBtn}
-            className="border-2 border-slate-300 rounded-r-lg py-1 px-3 bg-slate-300"
+            className="border-2 border-slate-300 rounded-r-lg py-1 px-2 bg-slate-300"
          >
             Add Task
          </button>
