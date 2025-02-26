@@ -13,7 +13,7 @@ const TaskList = () => {
                {tasks.filter((el) => el.isDone).length}/{tasks.length}
             </div>
          </div>
-         <div className="h-[300px] md:h-[310px] xl:h-[320px] overflow-scroll hsb">
+         <div className="h-[500px] md:h-[410px] xl:h-[320px] overflow-scroll hsb">
             <div className="hidden last:block w-max text-gray-300 mx-auto">There is no list</div>
             {tasks.map((el) => (
                <Task key={el.id} job={el} />
