@@ -27,7 +27,7 @@ const TaskCreate = () => {
             type="text"
             value={job}
             onChange={handleOnChange}
-            className="flex-grow border-2 border-slate-300 rounded-l-lg p-1"
+            className="flex-grow border-2 border-slate-300 rounded-l-lg p-1 focus:outline-1"
          />
          <button
             onClick={handleAddTaskBtn}

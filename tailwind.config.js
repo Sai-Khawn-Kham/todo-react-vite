@@ -7,11 +7,14 @@ export default {
   theme: {
     extend: {
       boxShadow: {
-        customOne: '0 25px 45px rgba(0,0,0,0.1)',
+        customOne: '0 25px 45px 12px',
+      },
+      boxShadowColor: {
+        colorOne: "rgba(0,0,0,0.5)"
       },
       borderColor: {
-        customOne: "rgba(255,255,255,0.5)",
-        customTwo: "rgba(255,255,255,0.2)",
+        customOne: "rgba(200,200,200,0.5)",
+        customTwo: "rgba(200,200,200,0.2)",
       },
       colors: {
         customOne: "rgb(255,255,255,0.2)",
