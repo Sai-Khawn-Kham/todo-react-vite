@@ -21,13 +21,28 @@ const TaskCreate = () => {
       }
    };
 
+   const handleOnKeyup = (e) => {
+      if(e.key=="Enter") {
+         if(job!==""){
+            const newTask = {
+               id: Date.now(),
+               task: job,
+               isDone: false,
+            };
+            addTask(newTask);
+            setJob("");
+         }
+      }
+   }
+
    return (
       <div className="flex">
          <input
             type="text"
             value={job}
             onChange={handleOnChange}
-            className="border border-slate-300 rounded-l-md py-1 pl-1 bg-slate-100 focus:outline-none grow"
+            onKeyUp={handleOnKeyup}
+            className="border border-slate-300 rounded-l-md py-1 pl-1 md:pl-2 bg-slate-100 focus:outline-none grow"
          />
          <button
             onClick={handleAddTaskBtn}
