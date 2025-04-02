@@ -18,9 +18,9 @@ const App = () => {
             <div className="absolute rounded-lg shadow-2xl border border-slate-300/50 border-r-slate-300/20 border-b-slate-300/20 bg-slate-50/20 animate-y animate-delay-3000 bottom-44 right-24 w-10 h-10 md:w-24 md:h-24"></div>
             <div className="absolute rounded-lg shadow-2xl border border-slate-300/50 border-r-slate-300/20 border-b-slate-300/20 bg-slate-50/20 animate-y animate-delay-4000 bottom-36 md:bottom-10 left-20 w-10 h-10 md:w-24 md:h-24"></div>
             <div className="relative flex flex-col gap-3 w-full h-full p-3">
-               <Link to={"https://khawn-portfolio.netlify.app"} className="w-max">
+               {/* <Link to={"https://khawn-portfolio.netlify.app"} className="w-max">
                   <BiLeftArrowAlt className="size-6" />
-               </Link>
+               </Link> */}
                <Heading />
                <TaskCreate />
                <TaskList />
