@@ -26,16 +26,15 @@ const Task = ({ job: { id, isDone, task } }) => {
    };
 
    return (
-      <div className="flex justify-between items-center border-2 border-slate-300 px-2 py-1 rounded-lg mb-2 last:mb-0">
-         <div className="flex items-center gap-3">
+      <div className="flex justify-between items-center border border-slate-300 px-2 py-1 rounded-lg">
+         <div className="flex items-center gap-2">
             <input
                type="checkbox"
                checked={isDone}
                onChange={handleOnChange}
-               className="size-4"
+               className="size-5"
             />
             <p className={isDone?"line-through opacity-70":""}>{task}</p>
-
          </div>
          <button
             onClick={handleDeleteBtn}

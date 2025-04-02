@@ -22,18 +22,18 @@ const TaskCreate = () => {
    };
 
    return (
-      <div className="flex mb-5">
+      <div className="flex">
          <input
             type="text"
             value={job}
             onChange={handleOnChange}
-            className="flex-grow border-2 border-slate-300 rounded-l-lg p-1 focus:outline-1"
+            className="border border-slate-300 rounded-l-md py-1 pl-1 bg-slate-100 focus:outline-none grow"
          />
          <button
             onClick={handleAddTaskBtn}
-            className="border-2 border-slate-300 rounded-r-lg py-1 px-2 bg-slate-300"
+            className="border border-slate-300 rounded-r-md py-1 px-2 bg-slate-300 focus:outline-none"
          >
-            Add Task
+            Enter
          </button>
       </div>
    );

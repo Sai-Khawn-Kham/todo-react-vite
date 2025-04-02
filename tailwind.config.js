@@ -20,24 +20,27 @@ export default {
         customOne: "rgb(255,255,255,0.2)",
       },
       keyframes: {
-        upDown: {
+        y: {
           '0%,100%': {
             transform: 'translateY(0px)',
           },
           '50%': {
             transform: 'translateY(80px)',
           }
-        }
+        },
+        x: {
+          '0%,100%': {
+            transform: 'translateX(0px)',
+          },
+          '50%': {
+            transform: 'translateX(80px)',
+          }
+        },
       },
       animation: {
-        upDown: "upDown 5s linear infinite",
+        y: "y 5s linear infinite",
+        x: "x 5s linear infinite",
       },
-      transitionDelay: {
-        '2000': "2000ms",
-        '3000': "3000ms",
-        '4000': "4000ms",
-        '5000': "5000ms",
-      }
     },
   },
   plugins: [],
