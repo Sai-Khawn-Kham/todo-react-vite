@@ -26,7 +26,7 @@ const Task = ({ job: { id, isDone, task } }) => {
    };
 
    return (
-      <div className="flex justify-between items-center border border-slate-300 px-2 py-1 rounded-lg">
+      <div className="flex justify-between items-center border border-slate-300 px-2 py-1 rounded-lg hover:bg-slate-50/10">
          <div className="flex items-center gap-2">
             <input
                type="checkbox"
