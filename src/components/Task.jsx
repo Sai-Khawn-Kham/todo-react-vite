@@ -32,7 +32,7 @@ const Task = ({ job: { id, isDone, task } }) => {
                type="checkbox"
                checked={isDone}
                onChange={handleOnChange}
-               className="size-5"
+               className=""
             />
             <p className={isDone?"line-through opacity-70":""}>{task}</p>
          </div>
